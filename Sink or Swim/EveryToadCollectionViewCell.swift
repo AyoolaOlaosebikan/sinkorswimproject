@@ -9,4 +9,6 @@ import UIKit
 
 class EveryToadCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var toadImageView: UIImageView! 
 }
+    

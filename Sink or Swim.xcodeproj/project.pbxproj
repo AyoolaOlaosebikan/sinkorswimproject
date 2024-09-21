@@ -21,6 +21,10 @@
 		8C4F97D72C9D290E008AA494 /* DarkModeSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97D62C9D290E008AA494 /* DarkModeSwitch.swift */; };
 		8C4F97D92C9E1670008AA494 /* ToadImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97D82C9E1670008AA494 /* ToadImageController.swift */; };
 		8C4F97DB2C9E309E008AA494 /* ToadImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97DA2C9E309E008AA494 /* ToadImages.swift */; };
+		8C4F97DD2C9F30EB008AA494 /* Toad Lore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97DC2C9F30EB008AA494 /* Toad Lore.swift */; };
+		8C5AF0732C9F3ED600FFD8DB /* TopLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AF0722C9F3ED600FFD8DB /* TopLabel.swift */; };
+		8C5AF0752C9F463A00FFD8DB /* EveryToadCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AF0742C9F463A00FFD8DB /* EveryToadCollectionViewController.swift */; };
+		8C5AF0772C9F471400FFD8DB /* EveryToadCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5AF0762C9F471400FFD8DB /* EveryToadCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,10 @@
 		8C4F97D62C9D290E008AA494 /* DarkModeSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeSwitch.swift; sourceTree = "<group>"; };
 		8C4F97D82C9E1670008AA494 /* ToadImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToadImageController.swift; sourceTree = "<group>"; };
 		8C4F97DA2C9E309E008AA494 /* ToadImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToadImages.swift; sourceTree = "<group>"; };
+		8C4F97DC2C9F30EB008AA494 /* Toad Lore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toad Lore.swift"; sourceTree = "<group>"; };
+		8C5AF0722C9F3ED600FFD8DB /* TopLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLabel.swift; sourceTree = "<group>"; };
+		8C5AF0742C9F463A00FFD8DB /* EveryToadCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryToadCollectionViewController.swift; sourceTree = "<group>"; };
+		8C5AF0762C9F471400FFD8DB /* EveryToadCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryToadCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +119,17 @@
 		8C4F979B2C9B473C008AA494 /* Sink or Swim */ = {
 			isa = PBXGroup;
 			children = (
+				8C5AF0722C9F3ED600FFD8DB /* TopLabel.swift */,
 				8C4F97D82C9E1670008AA494 /* ToadImageController.swift */,
+				8C4F97DC2C9F30EB008AA494 /* Toad Lore.swift */,
 				8C4F97DA2C9E309E008AA494 /* ToadImages.swift */,
 				8C4F97D62C9D290E008AA494 /* DarkModeSwitch.swift */,
 				8C4F979C2C9B473C008AA494 /* AppDelegate.swift */,
 				8C4F979E2C9B473C008AA494 /* SceneDelegate.swift */,
 				8C4F97A02C9B473C008AA494 /* ViewController.swift */,
 				8C4F97A22C9B473C008AA494 /* Main.storyboard */,
+				8C5AF0742C9F463A00FFD8DB /* EveryToadCollectionViewController.swift */,
+				8C5AF0762C9F471400FFD8DB /* EveryToadCollectionViewCell.swift */,
 				8C4F97CC2C9B4838008AA494 /* TableViewController.swift */,
 				8C4F97CF2C9B4A4B008AA494 /* BaseToadImages.m */,
 				8C4F97D12C9B4A5E008AA494 /* BaseToadImages.h */,
@@ -278,9 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5AF0732C9F3ED600FFD8DB /* TopLabel.swift in Sources */,
 				8C4F97D92C9E1670008AA494 /* ToadImageController.swift in Sources */,
+				8C5AF0772C9F471400FFD8DB /* EveryToadCollectionViewCell.swift in Sources */,
 				8C4F97DB2C9E309E008AA494 /* ToadImages.swift in Sources */,
 				8C4F97D02C9B4A4B008AA494 /* BaseToadImages.m in Sources */,
+				8C4F97DD2C9F30EB008AA494 /* Toad Lore.swift in Sources */,
+				8C5AF0752C9F463A00FFD8DB /* EveryToadCollectionViewController.swift in Sources */,
 				8C4F97A12C9B473C008AA494 /* ViewController.swift in Sources */,
 				8C4F97D72C9D290E008AA494 /* DarkModeSwitch.swift in Sources */,
 				8C4F979D2C9B473C008AA494 /* AppDelegate.swift in Sources */,
