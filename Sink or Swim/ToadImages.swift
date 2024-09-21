@@ -29,7 +29,7 @@ class ToadImages: UIViewController, UIScrollViewDelegate {
 
         ratingLabel.text = "\(ratingValue)/10"
     }
-    
+    //yuh
     var displayImageName = "i jus lost my dawg"
     
     override func viewDidLoad() {
