@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8C4F979D2C9B473C008AA494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F979C2C9B473C008AA494 /* AppDelegate.swift */; };
+		8C4F979F2C9B473C008AA494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F979E2C9B473C008AA494 /* SceneDelegate.swift */; };
+		8C4F97A12C9B473C008AA494 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97A02C9B473C008AA494 /* ViewController.swift */; };
+		8C4F97A42C9B473C008AA494 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8C4F97A32C9B473C008AA494 /* Base */; };
+		8C4F97A62C9B473E008AA494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4F97A52C9B473E008AA494 /* Assets.xcassets */; };
+		8C4F97B42C9B473E008AA494 /* Sink_or_SwimTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97B32C9B473E008AA494 /* Sink_or_SwimTests.swift */; };
+		8C4F97BE2C9B473E008AA494 /* Sink_or_SwimUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97BD2C9B473E008AA494 /* Sink_or_SwimUITests.swift */; };
+		8C4F97C02C9B473E008AA494 /* Sink_or_SwimUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97BF2C9B473E008AA494 /* Sink_or_SwimUITestsLaunchTests.swift */; };
+		8C4F97CD2C9B4838008AA494 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97CC2C9B4838008AA494 /* TableViewController.swift */; };
+		8C4F97D02C9B4A4B008AA494 /* BaseToadImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97CF2C9B4A4B008AA494 /* BaseToadImages.m */; };
+		8C4F97D52C9BD486008AA494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4F97A22C9B473C008AA494 /* Main.storyboard */; };
+		8C4F97D72C9D290E008AA494 /* DarkModeSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97D62C9D290E008AA494 /* DarkModeSwitch.swift */; };
+		8C4F97D92C9E1670008AA494 /* ToadImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97D82C9E1670008AA494 /* ToadImageController.swift */; };
+		8C4F97DB2C9E309E008AA494 /* ToadImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4F97DA2C9E309E008AA494 /* ToadImages.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8C4F97B02C9B473E008AA494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C4F97912C9B473C008AA494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C4F97982C9B473C008AA494;
+			remoteInfo = "Sink or Swim";
+		};
+		8C4F97BA2C9B473E008AA494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C4F97912C9B473C008AA494 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C4F97982C9B473C008AA494;
+			remoteInfo = "Sink or Swim";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C4F97992C9B473C008AA494 /* Sink or Swim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sink or Swim.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4F979C2C9B473C008AA494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8C4F979E2C9B473C008AA494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8C4F97A02C9B473C008AA494 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8C4F97A32C9B473C008AA494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C4F97A52C9B473E008AA494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8C4F97A82C9B473E008AA494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8C4F97AA2C9B473E008AA494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C4F97AF2C9B473E008AA494 /* Sink or SwimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sink or SwimTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4F97B32C9B473E008AA494 /* Sink_or_SwimTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink_or_SwimTests.swift; sourceTree = "<group>"; };
+		8C4F97B92C9B473E008AA494 /* Sink or SwimUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sink or SwimUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C4F97BD2C9B473E008AA494 /* Sink_or_SwimUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink_or_SwimUITests.swift; sourceTree = "<group>"; };
+		8C4F97BF2C9B473E008AA494 /* Sink_or_SwimUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sink_or_SwimUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C4F97CC2C9B4838008AA494 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8C4F97CE2C9B4A4A008AA494 /* Sink or Swim-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sink or Swim-Bridging-Header.h"; sourceTree = "<group>"; };
+		8C4F97CF2C9B4A4B008AA494 /* BaseToadImages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseToadImages.m; sourceTree = "<group>"; };
+		8C4F97D12C9B4A5E008AA494 /* BaseToadImages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseToadImages.h; sourceTree = "<group>"; };
+		8C4F97D62C9D290E008AA494 /* DarkModeSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeSwitch.swift; sourceTree = "<group>"; };
+		8C4F97D82C9E1670008AA494 /* ToadImageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToadImageController.swift; sourceTree = "<group>"; };
+		8C4F97DA2C9E309E008AA494 /* ToadImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToadImages.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C4F97962C9B473C008AA494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4F97AC2C9B473E008AA494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4F97B62C9B473E008AA494 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C4F97902C9B473C008AA494 = {
+			isa = PBXGroup;
+			children = (
+				8C4F979B2C9B473C008AA494 /* Sink or Swim */,
+				8C4F97B22C9B473E008AA494 /* Sink or SwimTests */,
+				8C4F97BC2C9B473E008AA494 /* Sink or SwimUITests */,
+				8C4F979A2C9B473C008AA494 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C4F979A2C9B473C008AA494 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C4F97992C9B473C008AA494 /* Sink or Swim.app */,
+				8C4F97AF2C9B473E008AA494 /* Sink or SwimTests.xctest */,
+				8C4F97B92C9B473E008AA494 /* Sink or SwimUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C4F979B2C9B473C008AA494 /* Sink or Swim */ = {
+			isa = PBXGroup;
+			children = (
+				8C4F97D82C9E1670008AA494 /* ToadImageController.swift */,
+				8C4F97DA2C9E309E008AA494 /* ToadImages.swift */,
+				8C4F97D62C9D290E008AA494 /* DarkModeSwitch.swift */,
+				8C4F979C2C9B473C008AA494 /* AppDelegate.swift */,
+				8C4F979E2C9B473C008AA494 /* SceneDelegate.swift */,
+				8C4F97A02C9B473C008AA494 /* ViewController.swift */,
+				8C4F97A22C9B473C008AA494 /* Main.storyboard */,
+				8C4F97CC2C9B4838008AA494 /* TableViewController.swift */,
+				8C4F97CF2C9B4A4B008AA494 /* BaseToadImages.m */,
+				8C4F97D12C9B4A5E008AA494 /* BaseToadImages.h */,
+				8C4F97A52C9B473E008AA494 /* Assets.xcassets */,
+				8C4F97A72C9B473E008AA494 /* LaunchScreen.storyboard */,
+				8C4F97AA2C9B473E008AA494 /* Info.plist */,
+				8C4F97CE2C9B4A4A008AA494 /* Sink or Swim-Bridging-Header.h */,
+			);
+			path = "Sink or Swim";
+			sourceTree = "<group>";
+		};
+		8C4F97B22C9B473E008AA494 /* Sink or SwimTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C4F97B32C9B473E008AA494 /* Sink_or_SwimTests.swift */,
+			);
+			path = "Sink or SwimTests";
+			sourceTree = "<group>";
+		};
+		8C4F97BC2C9B473E008AA494 /* Sink or SwimUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8C4F97BD2C9B473E008AA494 /* Sink_or_SwimUITests.swift */,
+				8C4F97BF2C9B473E008AA494 /* Sink_or_SwimUITestsLaunchTests.swift */,
+			);
+			path = "Sink or SwimUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C4F97982C9B473C008AA494 /* Sink or Swim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C4F97C32C9B473E008AA494 /* Build configuration list for PBXNativeTarget "Sink or Swim" */;
+			buildPhases = (
+				8C4F97952C9B473C008AA494 /* Sources */,
+				8C4F97962C9B473C008AA494 /* Frameworks */,
+				8C4F97972C9B473C008AA494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sink or Swim";
+			productName = "Sink or Swim";
+			productReference = 8C4F97992C9B473C008AA494 /* Sink or Swim.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8C4F97AE2C9B473E008AA494 /* Sink or SwimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C4F97C62C9B473E008AA494 /* Build configuration list for PBXNativeTarget "Sink or SwimTests" */;
+			buildPhases = (
+				8C4F97AB2C9B473E008AA494 /* Sources */,
+				8C4F97AC2C9B473E008AA494 /* Frameworks */,
+				8C4F97AD2C9B473E008AA494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C4F97B12C9B473E008AA494 /* PBXTargetDependency */,
+			);
+			name = "Sink or SwimTests";
+			productName = "Sink or SwimTests";
+			productReference = 8C4F97AF2C9B473E008AA494 /* Sink or SwimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8C4F97B82C9B473E008AA494 /* Sink or SwimUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C4F97C92C9B473E008AA494 /* Build configuration list for PBXNativeTarget "Sink or SwimUITests" */;
+			buildPhases = (
+				8C4F97B52C9B473E008AA494 /* Sources */,
+				8C4F97B62C9B473E008AA494 /* Frameworks */,
+				8C4F97B72C9B473E008AA494 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8C4F97BB2C9B473E008AA494 /* PBXTargetDependency */,
+			);
+			name = "Sink or SwimUITests";
+			productName = "Sink or SwimUITests";
+			productReference = 8C4F97B92C9B473E008AA494 /* Sink or SwimUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C4F97912C9B473C008AA494 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					8C4F97982C9B473C008AA494 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+					8C4F97AE2C9B473E008AA494 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8C4F97982C9B473C008AA494;
+					};
+					8C4F97B82C9B473E008AA494 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 8C4F97982C9B473C008AA494;
+					};
+				};
+			};
+			buildConfigurationList = 8C4F97942C9B473C008AA494 /* Build configuration list for PBXProject "Sink or Swim" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8C4F97902C9B473C008AA494;
+			productRefGroup = 8C4F979A2C9B473C008AA494 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C4F97982C9B473C008AA494 /* Sink or Swim */,
+				8C4F97AE2C9B473E008AA494 /* Sink or SwimTests */,
+				8C4F97B82C9B473E008AA494 /* Sink or SwimUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C4F97972C9B473C008AA494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4F97D52C9BD486008AA494 /* Main.storyboard in Resources */,
+				8C4F97A62C9B473E008AA494 /* Assets.xcassets in Resources */,
+				8C4F97A42C9B473C008AA494 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4F97AD2C9B473E008AA494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4F97B72C9B473E008AA494 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C4F97952C9B473C008AA494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4F97D92C9E1670008AA494 /* ToadImageController.swift in Sources */,
+				8C4F97DB2C9E309E008AA494 /* ToadImages.swift in Sources */,
+				8C4F97D02C9B4A4B008AA494 /* BaseToadImages.m in Sources */,
+				8C4F97A12C9B473C008AA494 /* ViewController.swift in Sources */,
+				8C4F97D72C9D290E008AA494 /* DarkModeSwitch.swift in Sources */,
+				8C4F979D2C9B473C008AA494 /* AppDelegate.swift in Sources */,
+				8C4F979F2C9B473C008AA494 /* SceneDelegate.swift in Sources */,
+				8C4F97CD2C9B4838008AA494 /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4F97AB2C9B473E008AA494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4F97B42C9B473E008AA494 /* Sink_or_SwimTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C4F97B52C9B473E008AA494 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C4F97C02C9B473E008AA494 /* Sink_or_SwimUITestsLaunchTests.swift in Sources */,
+				8C4F97BE2C9B473E008AA494 /* Sink_or_SwimUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8C4F97B12C9B473E008AA494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C4F97982C9B473C008AA494 /* Sink or Swim */;
+			targetProxy = 8C4F97B02C9B473E008AA494 /* PBXContainerItemProxy */;
+		};
+		8C4F97BB2C9B473E008AA494 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8C4F97982C9B473C008AA494 /* Sink or Swim */;
+			targetProxy = 8C4F97BA2C9B473E008AA494 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8C4F97A22C9B473C008AA494 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C4F97A32C9B473C008AA494 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8C4F97A72C9B473E008AA494 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8C4F97A82C9B473E008AA494 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8C4F97C12C9B473E008AA494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8C4F97C22C9B473E008AA494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8C4F97C42C9B473E008AA494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJXC97G8VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sink or Swim/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hi.Sink-or-Swim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sink or Swim/Sink or Swim-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C4F97C52C9B473E008AA494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJXC97G8VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sink or Swim/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hi.Sink-or-Swim";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Sink or Swim/Sink or Swim-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8C4F97C72C9B473E008AA494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJXC97G8VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hi.Sink-or-SwimTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sink or Swim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sink or Swim";
+			};
+			name = Debug;
+		};
+		8C4F97C82C9B473E008AA494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJXC97G8VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hi.Sink-or-SwimTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sink or Swim.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sink or Swim";
+			};
+			name = Release;
+		};
+		8C4F97CA2C9B473E008AA494 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJXC97G8VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hi.Sink-or-SwimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sink or Swim";
+			};
+			name = Debug;
+		};
+		8C4F97CB2C9B473E008AA494 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MJXC97G8VT;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hi.Sink-or-SwimUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sink or Swim";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C4F97942C9B473C008AA494 /* Build configuration list for PBXProject "Sink or Swim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4F97C12C9B473E008AA494 /* Debug */,
+				8C4F97C22C9B473E008AA494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C4F97C32C9B473E008AA494 /* Build configuration list for PBXNativeTarget "Sink or Swim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4F97C42C9B473E008AA494 /* Debug */,
+				8C4F97C52C9B473E008AA494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C4F97C62C9B473E008AA494 /* Build configuration list for PBXNativeTarget "Sink or SwimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4F97C72C9B473E008AA494 /* Debug */,
+				8C4F97C82C9B473E008AA494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C4F97C92C9B473E008AA494 /* Build configuration list for PBXNativeTarget "Sink or SwimUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C4F97CA2C9B473E008AA494 /* Debug */,
+				8C4F97CB2C9B473E008AA494 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C4F97912C9B473C008AA494 /* Project object */;
+}
