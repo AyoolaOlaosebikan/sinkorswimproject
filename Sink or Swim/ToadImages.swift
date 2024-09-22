@@ -31,12 +31,12 @@ class ToadImages: UIViewController, UIScrollViewDelegate {
     
     @IBAction func raterValueChanged(_ sender: UIStepper) {
         ratingValue = Int(sender.value)
-        print("Stepper value changed to: \(ratingValue)")  // Debugging print
+        
 
         ratingLabel.text = "\(ratingValue)/10"
         
-        UserDefaults.standard.set(ratingValue, forKey: "savedRating")
-
+        UserDefaults.standard.set(ratingValue, forKey: displayImageName)
+        print("Stepper value changed to: \(ratingValue) for \(displayImageName)")  // Debugging print
     }
     
     @IBAction func contrastValueChanged(_ sender: UISlider) {
@@ -50,7 +50,8 @@ class ToadImages: UIViewController, UIScrollViewDelegate {
     
     @IBAction func confirmPressed(_ sender: UIButton) {
         contrastTimer?.invalidate()
-        ogImage = newImage
+        ogImage = newImage ?? ogImage
+        contrastSlider.value = 1.0
     }
     
     @objc func revertImage() {
@@ -93,12 +94,14 @@ class ToadImages: UIViewController, UIScrollViewDelegate {
 
 
         if let size = self.imageView?.image?.size{
+            self.scrollView.delegate = self
             self.scrollView.addSubview(self.imageView!)
             self.scrollView.contentSize = size
             self.scrollView.minimumZoomScale = 0.1
-            self.scrollView.delegate = self
+            self.scrollView.maximumZoomScale = 1
+            self.scrollView.setZoomScale(0.2, animated:false)
             
-            savedRating = UserDefaults.standard.integer(forKey: "savedRating")
+            savedRating = UserDefaults.standard.integer(forKey: displayImageName)
             ratingStepper.minimumValue = 0
             ratingStepper.maximumValue = 10
             ratingStepper.stepValue = 1

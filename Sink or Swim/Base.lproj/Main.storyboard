@@ -231,7 +231,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxe-OD-SZU">
                                 <rect key="frame" x="208" y="775" width="145" height="43"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Confirm Change"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Confirm Contrast Change">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="confirmPressed:" destination="dAn-nQ-jXd" eventType="touchUpInside" id="OIa-IK-BVW"/>
                                 </connections>
