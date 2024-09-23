@@ -7,26 +7,35 @@
 
 import UIKit
 
+// A view controller class that manages displaying lore information about toads, with options to switch between different lore segments.
 class Toad_Lore: UIViewController {
 
+    // IBOutlet for a custom label that will display the selected toad lore
     @IBOutlet weak var loreLabel: TopLabel!
+    
+    // IBOutlet for a segmented control that allows users to select different lore sections
     @IBOutlet weak var loreSegment: UISegmentedControl!
     
+    // Called when the view is first loaded into memory
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Set the label text to match the initial selected segment in the UISegmentedControl
         updateLabel(for: loreSegment.selectedSegmentIndex)
                 
-                // Add target for value changed
-                loreSegment.addTarget(self, action: #selector(loreSegmentValueChanged(_:)), for: .valueChanged)
-        // Do any additional setup after loading the view.
+        // Add a target-action mechanism for the UISegmentedControl that triggers when the user switches segments
+        loreSegment.addTarget(self, action: #selector(loreSegmentValueChanged(_:)), for: .valueChanged)
     }
     
+    // Method that gets called whenever the selected segment changes in the UISegmentedControl
     @objc func loreSegmentValueChanged(_ sender: UISegmentedControl) {
-        // Update label text based on selected segment
+        // Update the label text based on the selected segment index
         updateLabel(for: sender.selectedSegmentIndex)
     }
     
+    // Updates the text in the lore label based on the selected index in the segmented control
     func updateLabel(for index: Int) {
+        // Switch statement that changes the content of the label based on the selected segment index
         switch index {
         case 0:
             loreLabel.text = """
@@ -38,7 +47,6 @@ Key Characteristics of Toads:
 - Role in the Games: Toads frequently serve as guides and helpers for Mario and Princess Peach, providing valuable assistance, items, and information. They often inhabit various locations in the Mushroom Kingdom and play critical roles in various game narratives. In some games, Toads offer mini-games or challenges, enhancing gameplay experience.
 
 - Common Features: Toads are known for their distinctive speech patterns, often punctuated by phrases like "Toad!" and cheerful exclamations. Their upbeat attitude and willingness to help make them beloved characters among fans.
-
 """
         case 1:
             loreLabel.text = """
@@ -52,8 +60,8 @@ Toads are not just limited to main series games; they also appear in spin-offs l
 
 Throughout the years, Toads have become iconic in gaming culture, representing themes of friendship, support, and loyalty. Their enduring presence in the Mario franchise highlights their importance to the series' narrative and world-building.
 """
-
         default:
+            // Fallback for any unexpected index values; the label is set to empty
             loreLabel.text = ""
         }
     }
@@ -63,9 +71,7 @@ Throughout the years, Toads have become iconic in gaming culture, representing t
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // Pass any necessary information to the next view controller here.
     }
     */
-
 }
