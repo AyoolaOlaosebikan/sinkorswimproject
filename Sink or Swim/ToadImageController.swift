@@ -12,87 +12,89 @@ class ToadImageController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
+        // Uncomment this line if you want to retain selection between view presentations.
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // Uncomment this line if you want to add an Edit button in the navigation bar for editing rows in the table view.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
-    lazy var toadImages:BaseToadImages = {
+    
+    // Lazy initialization of the toad images. This ensures the instance of `BaseToadImages` is created only when first accessed.
+    lazy var toadImages: BaseToadImages = {
         return BaseToadImages.sharedInstance()
     }()
 
+    // Returns the number of sections in the table view. Here, we only have 1 section.
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
+    // Returns the number of rows in the section, which corresponds to the number of images in the `toadImages`.
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        
-        return self.toadImages.numberOfImages();
+        return self.toadImages.numberOfImages()
     }
 
-    
+    // Configures each cell in the table view with the name of the toad image at the corresponding index.
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Dequeues a reusable cell with the identifier "toad images yuh".
         let cell = tableView.dequeueReusableCell(withIdentifier: "toad images yuh", for: indexPath)
+
+        // Retrieves the image name at the current row index and sets the cell's text label to this name.
         let name = self.toadImages.getImageName(for: indexPath.row)
-        cell.textLabel!.text = name;
+        cell.textLabel!.text = name
 
-//Configure the cell...
-
+        // You can further configure the cell here (e.g., adding an image or accessory).
+        
         return cell
     }
-    
 
     /*
-    // Override to support conditional editing of the table view.
+    // Override this method if you want to allow editing of table view rows (e.g., deletion).
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
+        // Return true if the item should be editable.
         return true
     }
     */
 
     /*
-    // Override to support editing the table view.
+    // Override this method to support editing (e.g., swipe to delete).
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+            // Create a new row and insert it into the table
+        }
     }
     */
 
     /*
-    // Override to support rearranging the table view.
+    // Override this method to support rearranging the table view rows.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+        // Handle row reordering logic here.
     }
     */
 
     /*
-    // Override to support conditional rearranging of the table view.
+    // Override this method to conditionally allow rearranging of rows.
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
+        // Return false if you don't want the row to be re-orderable.
         return true
     }
     */
-
     
-     //MARK: - Navigation
+    // MARK: - Navigation
 
-     //In a storyboard-based application, you will often want to do a little preparation before navigation
+    // Prepares for the segue to the new view controller. It passes the selected toad image name to the next view.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         //Get the new view controller using segue.destination.
-         //Pass the selected object to the new view controller.
+        // Get the new view controller using segue.destination.
+        // Pass the selected object (image name) to the new view controller.
         if let vc = segue.destination as? ToadImages,
            let cell = sender as? UITableViewCell,
            let name = cell.textLabel?.text {
-                vc.displayImageName = name
+            vc.displayImageName = name
         }
     }
 }
