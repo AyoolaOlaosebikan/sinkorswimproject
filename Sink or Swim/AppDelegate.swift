@@ -7,30 +7,30 @@
 
 import UIKit
 
+// The @main attribute tells Swift that this is the entry point of the app.
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    // This method is called when the application has finished launching.
+    // It’s the entry point for any custom setup or configuration at app launch.
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
 
-    // MARK: UISceneSession Lifecycle
+    // MARK: - UISceneSession Lifecycle
 
+    // This method is called when a new scene session is being created.
+    // The scene session is used for managing multiple instances of the app's user interface (multi-window support).
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
+        // Return the configuration to use for the new scene (usually named "Default Configuration").
         return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
     }
 
+    // This method is called when the user discards a scene session.
+    // It provides a place to release resources or clean up any state associated with the discarded scene.
     func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+        // Handle any cleanup after a scene has been discarded.
+        // If the app is not running when a scene is discarded, this method will be called when the app is launched again.
     }
-
-
 }
-
